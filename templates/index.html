@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+  <title>Nasa - Newsletter</title>
+</head>
+<body>
+  <div class="content">
+    <div class="newsletter-card">
+      <div class="newsletter-header">
+        <div class="newsletter-header-big">Zapisz się do naszego Newslettera</div>
+        <div class="newsletter-header-small">
+          Podaj nam swój adres email aby otrzymywać informacje o<br>
+          nowo odkrytych planetach prosto od NASA
+        </div>
+      </div>
+      <div class="newsletter-form">
+        <form action="/" method="post" id="newsletter-form" style="display: flex; justify-content: center; height: 100%;">
+          <input type="email" placeholder="Twój email" name="email" id="email" class="newsletter-form-input">
+          <button type="submit" class="newsletter-form-submit" value="">
+            <img src="{{ url_for('static', filename='/icons/email-send-icon.svg') }}" alt="send icon" class="form-send-icon">
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{{ url_for('static', filename='scripts/main.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+</body>
+</html>
