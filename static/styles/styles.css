@@ -99,3 +99,9 @@ input:focus {
   -webkit-box-shadow: 0 0 12px #846EDB !important;
   box-shadow: 0 0 12px #846EDB !important;
 }
+
+.rodo {
+  color: white;
+  font-weight: 100;
+  font-size: 0.7em;
+}
